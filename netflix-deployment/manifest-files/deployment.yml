@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: netflix-container
-          image: 
+          image: abhishekk4/netflix-clone-app:v1
           ports:
             - containerPort: 3000  
