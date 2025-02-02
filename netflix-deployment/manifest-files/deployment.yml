@@ -1,0 +1,22 @@
+kind: Deployment
+apiVesion: apps/v1
+metadata: 
+  name: netflix-deployment
+  labels:
+    app: netflix
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: netflix
+
+  template:
+    metadata:
+      labels:
+        app: netflix
+    spec:
+      containers:
+        - name: netflix-container
+          image: 
+          ports:
+            - containerPort: 3000  

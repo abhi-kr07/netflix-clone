@@ -1,0 +1,6 @@
+region        = "us-east-1"
+vpc_id        = "vpc-0e08366536c21b80d"
+instance_type = "t2.large"
+subnet_id     = "subnet-0bda980f9324c372e"
+ami_id        = "ami-0c614dee691cbbf37"
+key_name      = "key-n-verginia"

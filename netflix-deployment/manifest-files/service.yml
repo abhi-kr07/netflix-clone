@@ -1,0 +1,15 @@
+kind: Service
+apiVesion: v1
+metadata:
+  name: netflix-service
+  labels:
+    app: netflix
+spec:
+  selector:
+    app: netflix
+  ports:
+    - name: http
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
+  type: LoadBalancer
